@@ -1,0 +1,57 @@
+{
+    "allowCustomDataForDataTypeAny": true,
+    "functions": [
+        {
+            "description": "Test string enum",
+            "id": "TESTSTRINGENUM",
+            "name": "TESTSTRINGENUM",
+            "parameters": [
+                {
+                    "name": "first",
+                    "type": "number"
+                },
+                {
+                    "description": "param of enum type planets",
+                    "name": "second",
+                    "type": "any"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Test string enum",
+            "id": "TESTSTRINGENUM2",
+            "name": "TESTSTRINGENUM2",
+            "parameters": [
+                {
+                    "name": "first",
+                    "type": "any"
+                },
+                {
+                    "description": "param of enum type planets",
+                    "name": "second",
+                    "type": "any"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Test number enum",
+            "id": "TESTNUMBERENUM",
+            "name": "TESTNUMBERENUM",
+            "parameters": [
+                {
+                    "name": "first",
+                    "type": "number"
+                },
+                {
+                    "description": "param of enum type numbers",
+                    "name": "second",
+                    "repeating": true,
+                    "type": "any"
+                }
+            ],
+            "result": {}
+        }
+    ]
+}
