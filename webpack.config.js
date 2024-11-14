@@ -86,8 +86,8 @@ module.exports = async (env, options) => {
             },
           },
           {
-            from: "./src/functions/functions.json",
-            to: "functions.json",
+            from: "./src/functions/functions*.json",
+            to: "[name][ext]",
           },
         ],
       }),
