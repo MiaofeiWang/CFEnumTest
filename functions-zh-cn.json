@@ -1,0 +1,152 @@
+{
+  "allowCustomDataForDataTypeAny": true,
+  "functions": [
+    {
+      "description": "测试字符串类型的enum",
+      "id": "testStringEnum",
+      "name": "testStringEnum",
+      "parameters": [
+        {
+          "description": "First number",
+          "name": "first",
+          "type": "number"
+        },
+        {
+          "description": "Param of enum type planets",
+          "name": "second",
+          "type": "string",
+          "customEnumType": "planets"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "测试字符串类型的enum",
+      "id": "testStringEnum2",
+      "name": "testStringEnum2",
+      "parameters": [
+        {
+          "description": "First number",
+          "name": "first",
+          "type": "string",
+          "customEnumType": "planets"
+        },
+        {
+          "description": "Param of enum type planets",
+          "name": "second",
+          "type": "string",
+          "customEnumType": "planets"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    },
+    {
+      "description": "测试数字类型的enum",
+      "id": "testNumberEnum",
+      "name": "testNumberEnum",
+      "parameters": [
+        {
+          "description": "First number",
+          "name": "first",
+          "type": "number"
+        },
+        {
+          "description": "Repeating param of enum type numbers",
+          "name": "second",
+          "type": "number",
+          "repeating": true,
+          "customEnumType": "numbers"
+        }
+      ],
+      "result": {
+        "type": "number"
+      }
+    }
+  ],
+  "enums": [
+    {
+      "id": "PLANETS",
+      "type": "string",
+      "values": [
+        {
+          "value": "mercury",
+          "description": "水星",
+          "tooltip": "水星是离太阳最近的行星"
+        },
+        {
+          "value": "venus",
+          "description": "金星",
+          "tooltip": "金星是离太阳第二近的行星"
+        },
+        {
+          "value": "earth"
+        },
+        {
+          "value": "mars",
+          "description": "火星",
+          "tooltip": "火星是离太阳第四近的行星"
+        },
+        {
+          "value": "jupiter",
+          "description": "木星",
+          "tooltip": "木星是离太阳第五近的行星"
+        },
+        {
+          "value": "saturn",
+          "description": "土星",
+          "tooltip": "土星是离太阳第六近的行星"
+        },
+        {
+          "value": "uranus",
+          "description": "天王星",
+          "tooltip": "天王星是离太阳第七近的行星"
+        },
+        {
+          "value": "neptune",
+          "description": "海王星",
+          "tooltip": "海王星是离太阳第八近的行星"
+        },
+        {
+          "value": "pluto",
+          "description": "冥王星",
+          "tooltip": "冥王星是离太阳第九近的行星"
+        }
+      ]
+    },
+    {
+      "id": "NUMBERS",
+      "type": "number",
+      "values": [
+        {
+          "value": 1,
+          "description": "One",
+          "tooltip": "数字1"
+        },
+        {
+          "value": 2,
+          "description": "Two",
+          "tooltip": "数字2"
+        },
+        {
+          "value": 3,
+          "description": "Three",
+          "tooltip": "数字3"
+        },
+        {
+          "value": 4,
+          "description": "Four",
+          "tooltip": "数字4"
+        },
+        {
+          "value": 5,
+          "description": "Five",
+          "tooltip": "数字5"
+        }
+      ]
+    }
+  ]
+}
