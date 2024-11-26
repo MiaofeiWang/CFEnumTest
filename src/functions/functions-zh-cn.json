@@ -73,46 +73,47 @@
       "type": "string",
       "values": [
         {
+          "name": "水星",
           "value": "mercury",
-          "description": "水星",
           "tooltip": "水星是离太阳最近的行星"
         },
         {
+          "name": "水星",
           "value": "venus",
-          "description": "金星",
           "tooltip": "金星是离太阳第二近的行星"
         },
         {
+          "name": "地球",
           "value": "earth"
         },
         {
+          "name": "火星",
           "value": "mars",
-          "description": "火星",
           "tooltip": "火星是离太阳第四近的行星"
         },
         {
+          "name": "木星",
           "value": "jupiter",
-          "description": "木星",
           "tooltip": "木星是离太阳第五近的行星"
         },
         {
+          "name": "土星",
           "value": "saturn",
-          "description": "土星",
           "tooltip": "土星是离太阳第六近的行星"
         },
         {
+          "name": "天王星",
           "value": "uranus",
-          "description": "天王星",
           "tooltip": "天王星是离太阳第七近的行星"
         },
         {
+          "name": "海王星",
           "value": "neptune",
-          "description": "海王星",
           "tooltip": "海王星是离太阳第八近的行星"
         },
         {
+          "name": "冥王星",
           "value": "pluto",
-          "description": "冥王星",
           "tooltip": "冥王星是离太阳第九近的行星"
         }
       ]
@@ -122,28 +123,28 @@
       "type": "number",
       "values": [
         {
+          "name": "One",
           "value": 1,
-          "description": "One",
           "tooltip": "数字1"
         },
         {
+          "name": "Two",
           "value": 2,
-          "description": "Two",
           "tooltip": "数字2"
         },
         {
+          "name": "Three",
           "value": 3,
-          "description": "Three",
           "tooltip": "数字3"
         },
         {
+          "name": "Four",
           "value": 4,
-          "description": "Four",
           "tooltip": "数字4"
         },
         {
+          "name": "Five",
           "value": 5,
-          "description": "Five",
           "tooltip": "数字5"
         }
       ]
