@@ -13,7 +13,8 @@
                 {
                     "description": "param of enum type planets",
                     "name": "second",
-                    "type": "any"
+                    "type": "string",
+                    "customEnumType": "PLANETS"
                 }
             ],
             "result": {}
@@ -25,12 +26,14 @@
             "parameters": [
                 {
                     "name": "first",
-                    "type": "any"
+                    "type": "string",
+                    "customEnumType": "PLANETS"
                 },
                 {
                     "description": "param of enum type planets",
                     "name": "second",
-                    "type": "any"
+                    "type": "string",
+                    "customEnumType": "PLANETS"
                 }
             ],
             "result": {}
@@ -48,10 +51,200 @@
                     "description": "param of enum type numbers",
                     "name": "second",
                     "repeating": true,
-                    "type": "any"
+                    "type": "number",
+                    "customEnumType": "NUMBERS"
                 }
             ],
             "result": {}
+        },
+        {
+            "id": "GETDEALS",
+            "name": "GETDEALS",
+            "parameters": [
+                {
+                    "description": "Deal type",
+                    "name": "type",
+                    "type": "string",
+                    "customEnumType": "DealType"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "id": "FOOBAR",
+            "name": "FOOBAR",
+            "parameters": [
+                {
+                    "name": "input",
+                    "type": "string",
+                    "customEnumType": "Color"
+                },
+                {
+                    "name": "input2",
+                    "type": "number",
+                    "customEnumType": "ColorNumber"
+                }
+            ],
+            "result": {}
+        }
+    ],
+    "enums": [
+        {
+            "id": "PLANETS",
+            "type": "string",
+            "values": [
+                {
+                    "name": "mercury",
+                    "value": "mercury",
+                    "tooltip": "mercury is the first planet from the sun"
+                },
+                {
+                    "name": "venus",
+                    "value": "venus",
+                    "tooltip": "venus is the second planet from the sun"
+                },
+                {
+                    "name": "earth",
+                    "value": "earth",
+                    "tooltip": "Oh earth"
+                },
+                {
+                    "name": "mars",
+                    "value": "mars",
+                    "tooltip": "mars is the fourth planet from the sun"
+                },
+                {
+                    "name": "jupiter",
+                    "value": "jupiter",
+                    "tooltip": "jupiter is the fifth planet from the sun"
+                },
+                {
+                    "name": "saturn",
+                    "value": "saturn",
+                    "tooltip": "saturn is the sixth planet from the sun"
+                },
+                {
+                    "name": "uranus",
+                    "value": "uranus",
+                    "tooltip": "uranus is the seventh planet from the sun"
+                },
+                {
+                    "name": "neptune",
+                    "value": "neptune",
+                    "tooltip": "neptune is the eighth planet from the sun"
+                }
+            ]
+        },
+        {
+            "id": "NUMBERS",
+            "type": "number",
+            "values": [
+                {
+                    "name": "One",
+                    "value": 1,
+                    "tooltip": "One"
+                },
+                {
+                    "name": "Two",
+                    "value": 2,
+                    "tooltip": "Two"
+                },
+                {
+                    "name": "Three",
+                    "value": 3,
+                    "tooltip": "Three"
+                },
+                {
+                    "name": "Four",
+                    "value": 4,
+                    "tooltip": "Four"
+                },
+                {
+                    "name": "Five",
+                    "value": 5,
+                    "tooltip": "Five"
+                }
+            ]
+        },
+        {
+            "id": "DealType",
+            "type": "string",
+            "values": [
+                {
+                    "name": "Merge",
+                    "value": "Merge",
+                    "tooltip": "Represents a merger between two companies"
+                },
+                {
+                    "name": "Acquire",
+                    "value": "Acquire",
+                    "tooltip": "Represents the acquisition of one company by another"
+                },
+                {
+                    "name": "TenderOffer",
+                    "value": "Tender Offer",
+                    "tooltip": "Represents a tender offer to purchase some or all of shareholders' shares"
+                },
+                {
+                    "name": "LeveragedBuyout",
+                    "value": "Leveraged Buyout",
+                    "tooltip": "Represents a leveraged buyout, typically using borrowed funds"
+                },
+                {
+                    "name": "SeekingBuyer",
+                    "value": "Seeking Buyer",
+                    "tooltip": "Represents a company seeking a buyer"
+                },
+                {
+                    "name": "StakePurchase",
+                    "value": "Stake Purchase",
+                    "tooltip": "Represents the purchase of a stake in a company"
+                }
+            ]
+        },
+        {
+            "id": "Color",
+            "type": "string",
+            "values": [
+                {
+                    "name": "Red",
+                    "value": "Red",
+                    "tooltip": ""
+                },
+                {
+                    "name": "Green",
+                    "value": "Green",
+                    "tooltip": ""
+                },
+                {
+                    "name": "Blue",
+                    "value": "Blue",
+                    "tooltip": ""
+                }
+            ]
+        },
+        {
+            "id": "ColorNumber",
+            "type": "number",
+            "values": [
+                {
+                    "name": "Red",
+                    "value": 1,
+                    "tooltip": ""
+                },
+                {
+                    "name": "Green",
+                    "value": 2,
+                    "tooltip": ""
+                },
+                {
+                    "name": "Blue",
+                    "value": 3,
+                    "tooltip": ""
+                }
+            ]
         }
     ]
 }

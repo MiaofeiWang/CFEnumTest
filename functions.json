@@ -65,6 +65,23 @@
       "result": {
         "type": "number"
       }
+    },
+    {
+      "id": "BLANKSNIPPET.FOOBAR",
+      "name": "BLANKSNIPPET.FOOBAR",
+      "parameters": [
+        {
+          "name": "input",
+          "type": "string",
+          "customEnumType": "BlankSnippet.Color"
+        },
+        {
+          "name": "input2",
+          "type": "number",
+          "customEnumType": "BlankSnippet.ColorNumber"
+        }
+      ],
+      "result": {}
     }
   ],
   "enums": [
@@ -146,6 +163,48 @@
           "name": "Five",
           "value": 5,
           "tooltip": "Five"
+        }
+      ]
+    },
+    {
+      "id": "BlankSnippet.Color",
+      "type": "string",
+      "values": [
+        {
+          "name": "Red",
+          "value": "Red",
+          "tooltip": ""
+        },
+        {
+          "name": "Green",
+          "value": "Green",
+          "tooltip": ""
+        },
+        {
+          "name": "Blue",
+          "value": "Blue",
+          "tooltip": ""
+        }
+      ]
+    },
+    {
+      "id": "BlankSnippet.ColorNumber",
+      "type": "number",
+      "values": [
+        {
+          "name": "Red",
+          "value": 1,
+          "tooltip": ""
+        },
+        {
+          "name": "Green",
+          "value": 2,
+          "tooltip": ""
+        },
+        {
+          "name": "Blue",
+          "value": 3,
+          "tooltip": ""
         }
       ]
     }
