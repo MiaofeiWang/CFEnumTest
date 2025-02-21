@@ -2,8 +2,7 @@
 
 /**
  * Enum for planets with descriptions and tooltips.
- * @customenum
- * @enum {string}
+ * @customenum {string}
  */
 enum PLANETS {
   /** mercury is the first planet from the sun */
@@ -48,8 +47,7 @@ export function testStringEnum2(first: PLANETS, second: PLANETS): any {
 
 /**
  * Enum for numbers with descriptions and tooltips.
- * @customenum
- * @enum {number}
+ * @customenum {number}
  */
 enum NUMBERS {
   /** One */
@@ -74,4 +72,57 @@ enum NUMBERS {
 export function testNumberEnum(first: number, second: NUMBERS[]): any {
   const sum = second.reduce((acc, num) => acc + num, 0);
   return sum;
+}
+
+/**
+ * Enum for deal types
+ * @customEnum {string}
+ */
+enum DealType {
+  // Represents a merger between two companies
+  Merge = "Merge",
+  // Represents the acquisition of one company by another
+  Acquire = "Acquire",
+  // Represents a tender offer to purchase some or all of shareholders' shares
+  TenderOffer = "Tender Offer",
+  // Represents a leveraged buyout, typically using borrowed funds
+  LeveragedBuyout = "Leveraged Buyout",
+  // Represents a company seeking a buyer
+  SeekingBuyer = "Seeking Buyer",
+  // Represents the purchase of a stake in a company
+  StakePurchase = "Stake Purchase",
+}
+
+/**
+ * @customfunction
+ * @param type Deal type
+ * @returns 
+ */
+function getDeals(type: DealType): string {
+  return "Deals of type " + type;
+}
+
+/**
+ * @customenum {string}
+ */
+enum Color {
+  Red = "Red",
+  Green = "Green",
+  Blue = "Blue"
+}
+
+/**
+ * @customenum
+ */
+enum ColorNumber {
+  Red = 1,
+  Green = 2,
+  Blue = 3
+}
+
+/**
+ * @customfunction
+ */
+function foobar(input: Color, input2: ColorNumber) {
+  return input + input2;
 }
