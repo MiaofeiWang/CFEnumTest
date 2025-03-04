@@ -30,7 +30,7 @@ enum PLANETS {
  * @param second param of enum type planets
  * @returns
  */
-export function testStringEnum(first: number, second: PLANETS): any {
+function testStringEnum(first: number, second: PLANETS): any {
   return second;
 }
 
@@ -41,7 +41,7 @@ export function testStringEnum(first: number, second: PLANETS): any {
  * @param second param of enum type planets
  * @returns
  */
-export function testStringEnum2(first: PLANETS, second: PLANETS): any {
+function testStringEnum2(first: PLANETS, second: PLANETS): any {
   return first + second;
 }
 
@@ -69,7 +69,7 @@ enum NUMBERS {
  * @param second param of enum type numbers
  * @returns
  */
-export function testNumberEnum(first: number, second: NUMBERS[]): any {
+function testNumberEnum(first: number, second: NUMBERS[]): any {
   const sum = second.reduce((acc, num) => acc + num, 0);
   return sum;
 }
